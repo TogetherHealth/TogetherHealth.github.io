@@ -1,0 +1,53 @@
+body {
+    font-family: 'Montserrat';
+    overflow-y: scroll;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    /* Adjust the padding as needed */
+    text-align: center;
+}
+
+.section-container {
+    background-image: url('./assets/wave_bg.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* background- */
+}
+
+.section-content {
+    /* width: 49%; */
+    margin: auto;
+}
+
+.section-hero {
+    height: 442px;
+    background: url('./assets/section-hero.png');
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.how-it-works {
+    background-image: url('./assets/wave.svg');
+}
+
+.btn-primary {
+    border-color: #84A5D7 !important;
+    background-color: #84A5D7 !important;
+    color: "white" !important;
+    width: 100%
+}

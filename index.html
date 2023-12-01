@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Together Health</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@100;200;300;400;700;800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="container-fluid" style="font-family:Montserrat;">
+
+    <!-- Modal -->
+    <div class="modal fade" id="healthcareModal" tabindex="-1" aria-labelledby="healthcareModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="healthcareModalLabel">Welcome to Personalized Healthcare!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Congratulations on taking the next step towards exceptional healthcare in Nashville. Here's an
+                        exclusive glimpse into what awaits you:</p>
+
+                    <ul>
+                        <li><strong>New Patient Enrollment:</strong> Join our community and embark on a personalized
+                            healthcare journey tailored just for you.</li>
+                        <li><strong>In-Home Visits:</strong> Experience the convenience of healthcare brought to your
+                            doorstep, ensuring comfort and accessibility.</li>
+                        <li><strong>24/7 Virtual Care:</strong> Enjoy round-the-clock access to our virtual care
+                            platform, connecting you with healthcare professionals whenever you need assistance.</li>
+                    </ul>
+
+                    <p>Your well-being is our priority. We look forward to providing you with the highest standard of
+                        care. Let's start this journey together! 🌟</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Together Health</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">How it works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-container">Meet the team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="section-container ">
+        <div class="row justify-content-evenly">
+            <div class="col-auto mt-5 ps-3">
+                <h1 class="fw-bold" style="font-size:60px">Together Health</h1>
+                <p style="font-size:30px;color:#444">Healthcare When You Need it. Your Time, </br> Your Home, Your
+                    Health
+                </p>
+                <div class="row justify-content-evenly ps-3 pe-3">
+                    <button class="btn btn-primary col-auto border-0 fw-bold"
+                        style="width:48%; background-color:#FFAE64 !important;">Learn
+                        More</button>
+                    <a href="https://app.elationpassport.com/passport/login/" target="_blank"
+                        class="btn btn-primary col-auto fw-bold"
+                        style="width:48%; background-color:#84AFD7 !important">Member
+                        Sign-in</a>
+                </div>
+            </div>
+            <div class="col-auto">
+                <p class="mt-5 cursor-pointer" style="font-size:20px;color:#444">Accepting new patients in Nashville -
+                    offering
+                    in-home
+                    </br>
+                    visits and virtual care. <span class="badge rounded-pill bg-dark cursor-pointer"
+                        data-bs-toggle="modal" data-bs-target="#healthcareModal">More Details </span>
+
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-5 justify-content-center mb-5">
+            <div class="card" style="height:320px;width:430px; border-radius: 12px;">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Primary Care the way it should be</h5>
+                    <ul class="ps-0">
+                        <li class="mb-2"> - Accesible</li>
+                        <li class="mb-2"> - Afforable</li>
+                        <li class="mb-2"> - Convenient</li>
+                        <li class="mb-2"> - Whole family care for patients 16+</li>
+
+                    </ul>
+
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div style=" height:320px;width:430px;border-radius: 12px;" class="card ms-lg-3 me-lg-3">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Care Where You Want It:</h5>
+                    <ul class="ps-0">
+                        <li class="mb-2"> - In the comfort and security of your own home</li>
+                        <li class="mb-2"> - No more trips to the doctor, we come to you!</li>
+                        <li class="mb-2"> - No parking or waiting room hassels</li>
+                    </ul>
+
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="height:320px;width:430px;border-radius: 12px;">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Care When You Want It</h5>
+                    <ul class="ps-0">
+                        <li class="mb-2"> - No long waits to get an appointment</li>
+                        <li class="mb-2"> - Most appointments within 24 hours of contacting us</li>
+                        <li class="mb-2"> - No more choosing between work and your health</li>
+                        <li class="mb-2"> - Available 6AM-8PM 7 days/week</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div class="section-container">
+        <div class="section-content pt-2 row text-start">
+            <div class="col-3"></div>
+            <div class="col-9 d-none d-lg-block">
+                <div class="col-6 mt-5 text-start">
+                    <p class="" style="font-family:Montserrat">All of your primary care
+                    </p>
+                </div>
+                <div class="col-auto">
+                    <h1 class="fw-bold d-block">For One Low Fee</h1>
+
+                </div>
+            </div>
+            <h1 class="fw-bold text-center d-block d-md-none">Services</h1>
+            <div class="row justify-content-center">
+                <div class="section-hero d-none d-md-block"></div>
+            </div>
+
+        </div>
+        <div class="section-2">
+            <div class="row justify-content-center ">
+                <div class="col-3 d-none d-lg-block">
+                    <h2 class="fw-bold mt-3 ">Our Services Include</h2>
+                    <img class=" col-auto mt-3 d-sm-none d-lg-block" src="./assets/services.svg"
+                        style="height:220px" /></br>
+                    <a class="mt-5 d-none d-lg-block" href="#">View All Services -> </a>
+                </div>
+                <div class="col-lg-3 col-sm-auto mt-3">
+                    <ul>
+                        <li>
+                            <div>
+                                <h3 class="fw-bold">Primary Care</h3>
+                                <p> We are a passionate group of primary care providers. We are skilled at
+                                    caring for
+                                    the full spectrum of wellness and illness care for you and your family over
+                                    the age
+                                    of 16.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h3 class="fw-bold">Urgent Care</h3>
+                                <p> Did you wake up not feeling well? Twist an ankle? Fall of a bike? Need a
+                                    COVID test?
+                                    We do it all. Call us before packing up and heading to the Urgent Care
+                                    center and
+                                    waiting in a busy waiting room with other sick people.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h3 class="fw-bold">IV Therapy</h3>
+                                <p> Having trouble staying hydrated when sick? Feeling hungover? We can arrange
+                                    to have
+                                    intravenous hydration delivered in your home and speed your way to recovery
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a class="mt-5 d-block d-md-none" href="#">View All Services -> </a>
+
+                </div>
+            </div>
+        </div>
+        <!-- Meet the care team -->
+        <div class="mt-5">
+            <h1 class="text-center mt-5 fw-bold mb-5">Meet your care team</h1>
+            <p class="text-center mb-5">We're a team of healthcare professionals and technologists dedicated to
+                modernizing </br> health and wellness on <strong>your</strong> time!</p>
+            <div class="tester row justify-content-evenly mt-5">
+                <div class="col-auto">
+                    <div class="text-center">
+                        <img src="./assets/huy_tran.jpeg" style="height:250px; width:250px ;border-radius:50%;" />
+                        <p class="fw-bold mt-2">Huy Tran</p>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <img src="./assets/adam.jpeg" style="height:250px; width:250px ;border-radius:50%;" />
+                    <p class="text-center fw-bold mt-2">Adam Silverman</p>
+                </div>
+                <div class="col-auto">
+                    <img src="./assets/taura.jpeg" style="height:250px; width:250px ;border-radius:50%;" />
+                    <p class="text-center fw-bold mt-2">Taura Long</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="">
+            <h1 class="text-center fw-bold">Membership</h1>
+
+            <div style="height:400px; width:60%; margin:auto; background-color:white;padding-bottom:100px">
+                <h2 class="text-center pt-5 pb-3">Starting at <strong>$300</strong></h2>
+                <p class="text-center">Billed Annually</p>
+                <div class="pb-5 shadow-sm"
+                    style="height:250px; width:90%;margin:auto; background-color:#fafafa; border-radius:12px">
+                    <div class="row justify-content-center ">
+                        <div class="col-auto mt-5">
+                            <ul class="p-0">
+                                <li class="mb-3">One sentence long trust signal here</li>
+                                <li class="mb-3">One sentence long trust signal here</li>
+                                <li class="mb-3">One sentence long trust signal here</li>
+                            </ul>
+                        </div>
+                        <div class="col-auto mt-5 d-none d-md-block">
+                            <ul>
+                                <li class="mb-3">One sentence long trust signal here</li>
+                                <li class="mb-3">One sentence long trust signal here</li>
+                                <li class="mb-3">One sentence long trust signal here</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <p class="text-center mt-3 mb-5 d-none d-md-block" style="color:#c1c1c1">Unlock exclusive
+                    benefits and
+                    join our thriving
+                    community with a
+                    membership today.</p>
+            </div>
+        </div>
+        <!-- How it works -->
+        <div class="section-container">
+            <h1 class="text-center mt-5 fw-bold mb-5">How it works</h1>
+            <p class="text-center mb-5 w-75 mx-auto">Where are a team of passionate healthcare professionals,
+                independent of any
+                hospital or insurance company, and united in purpose to modernizing your experience with health and
+                wellness by being available where and when you want.</p>
+            <div class="tester row justify-content-center mt-5 mb-5">
+                <div class=" col-lg-4 text-center">
+                    <img src="./assets/services.svg" />
+                    <p class="text-center fw-bold mt-2">Access</p>
+                    <p>Use our app 24 hours a day to schedule an appointment. Communicate with us over email,
+                        text, or
+                        phone.</p>
+                </div>
+                <div class=" col-lg-4 text-center">
+                    <img src="./assets/unlimited_access.svg" />
+                    <p class="text-center fw-bold mt-2">Convenience</p>
+                    <p> Care delivered at your home or via telehealth. We are available when you want to be
+                        seen:
+                        6AM-8PM, 7 days a week, 365 days a year.</p>
+                </div>
+                <div class=" col-lg-4 text-center">
+                    <img src="./assets/globe.svg" />
+                    <p class="text-center fw-bold mt-2">Affordability</p>
+                    <p class="mt-2">One annual fee provides unlimited home and telehealth visits, inclusive of
+                        phone
+                        calls, texts, emails, and portal access to your health record. </p>
+                </div>
+            </div>
+            <div class="mt-5">
+                <div class="row justify-content-evenly">
+                    <div class="col-auto">
+                        <img class="d-none d-lg-block" src="./assets/map.svg" />
+                    </div>
+
+                    <!-- *Meeting you where you are  *  * * *Making it easier to stay healthy or get well *Delivering you a great service at a fair price. -->
+                    <div class="col-auto">
+                        <h2><strong>Get connected</strong> to a World of Healthcare Services at </br> Your
+                            Fingertips.
+                        </h2>
+                        <div class="row justify-content-start ">
+                            <div class="col-auto">
+                                <ul class="p-0">
+                                    <li class="mb-3">Meeting you where you are</li>
+                                    <li class="mb-3">Being available when you are</li>
+                                    <li class="mb-3">Reducing the hassle of getting care</li>
+                                </ul>
+                            </div>
+                            <div class="col-auto d-none d-md-block">
+                                <ul>
+                                    <li class="mb-3">Improving the care experience</li>
+                                    <li class="mb-3">Making it easier to stay healthy or get well</li>
+                                    <li class="mb-3">Delivering you a great service at a fair price</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Review Carousel -->
+        <div class="row justify-content-center pb-3">
+
+            <div class="col-md-5 mt-5">
+                <div id="carouselExampleInterval" class="carousel slide caro" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="height:400px;" data-bs-interval="5000">
+                            <p class="rev1">
+                                "Working with Jordan was an a amazing experience! He was great at meeting
+                                deadlines
+                                and
+                                was always available to communicate when I needed him. After our first few
+                                meetings
+                                he
+                                fully
+                                understood the vision for the software we were needing built. Ultimately, the
+                                software
+                                he
+                                built landed
+                                us a multi-million dollar customer! I would recommend him to anyone
+                                needing a software developer."
+                            </p>
+                            <span class="small"><strong>Haden Anderson</strong></span><br />
+                            <span class="small">CFO, C3 Rentals</span>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <p class="rev1">
+                                "Paperback Development's training on Javascript, HTML, and CSS is impressive and
+                                unique.
+                                With
+                                experienced instructors, their well-structured curriculum provides practical
+                                application
+                                of
+                                coding concepts and ample opportunities for hands-on learning and practice.
+                                Their training has given me confidence in my coding skills, and I highly
+                                recommend
+                                Paperback
+                                Development for anyone seeking a solid foundation in web development."
+                            </p>
+                            <span class="small"><strong>Jelani Poole</strong></span><br />
+                            <span class="small">Student, Paperback Development</span>
+                        </div>
+                        <div class="carousel-item" style="height:401px;" data-bs-interval="5000">
+                            <p class="rev1">
+                                "Working with Jordan has been really beneficial to me as a developer. As a
+                                mentor he
+                                definitely makes sure he answers my questions. Diving deep into the basics so I
+                                can
+                                understand properly what is going on. As well encouraging to make mistakes so I
+                                can
+                                learn and be better."
+                            </p>
+                            <span class="small"><strong>Trevon Mays</strong></span><br />
+                            <span class="small">Student, Paperback Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div id="contactForm">
+                    <h1 class="mb-3 text-center" style="font-size:30px;"><strong>Contact Us</strong> <span
+                            id="dev"></span></h1>
+                    <form id="mainForm" action="" method="POST">
+                        <div class="mb-3">
+                            <label class="form-label required" style="font-family: Montserrat;">Name</label>
+                            <input type="text" name="name" class="form-control" id="clientName2">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label required" style="font-family: Montserrat;">Email</label>
+                            <input type="email" name="email" class="form-control" id="clientEmail2">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label required" style="font-family: Montserrat;">Message</label>
+                            <textarea class="form-control" name="message" id="clientMessage2"></textarea>
+                        </div>
+                        <div id="formActions" class="d-grid gap-2">
+                            <button type="btn" class="btn btn-primary" id="submitBtnMain">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer class="row justify-content-evenly">
+            <div class="col-auto">
+                <p>info@togetherhealth.com</p>
+                <p class="text-start">Your Time, Your Home, </br> Your Health </p>
+            </div>
+            <div class="col-auto">
+                <div class="row justify-content-center mb-5">
+                    <box-icon class="col-auto" name='facebook-circle' type='logo'></box-icon>
+                    <box-icon class="col-auto" name='twitter' type='logo'></box-icon>
+                    <box-icon class="col-auto" name='instagram' type='logo'></box-icon>
+                    <box-icon class="col-auto" name='linkedin' type='logo'></box-icon>
+                    <box-icon class="col-auto" name='youtube' type='logo'></box-icon>
+                </div>
+                </p>
+                <p class="text-center">&copy; 2023 Together Health, LLC</p>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+                <ul class="text-start">
+                    <li>Home</li>
+                    <li>Services</li>
+                    <li>How it works</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
