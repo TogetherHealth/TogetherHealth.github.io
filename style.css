@@ -10,7 +10,17 @@ ul li {
     text-decoration: none;
 }
 
-
+.custom-list li::before {
+    content: '\2022';
+    /* Unicode character for a bullet */
+    color: #000;
+    /* Customize bullet color if needed */
+    display: inline-block;
+    width: 1em;
+    /* Adjust the width as needed for spacing */
+    margin-left: -1em;
+    /* Negative margin to overlap with the text */
+}
 
 footer {
     background-color: #f8f8f8;
