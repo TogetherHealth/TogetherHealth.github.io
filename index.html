@@ -91,35 +91,61 @@
         <div class="section-container ">
             <div class="row justify-content-evenly">
                 <div class="col-auto mt-5 ps-3">
+                    <p>Healthcare when you need it</p>
                     <h1 class="fw-bold" style="font-size:60px">Together Health</h1>
-                    <p style="font-size:30px;color:#444">Healthcare When You Need it. Your Time, </br> Your Home, Your
-                        Health
+                    <p style="font-size:20px;color:#444">
+                        In <strong>your</strong> home, on <strong>your</strong> time, for <strong>your</strong> health.
                     </p>
-                    <div class="row justify-content-evenly ps-3 pe-3">
-                        <button class="btn btn-primary col-auto border-0 fw-bold"
-                            style="width:48%; background-color:#FFAE64 !important;">Learn
-                            More</button>
-                        <a href="https://app.elationpassport.com/passport/login/" target="_blank"
+                    <p>Accepting new patients in Nashville, TN - Offering <br /> in-home visits and 24/7 virtual care
+                    </p>
+                    <div class="row justify-content-start ">
+                        <div class="col-auto">
+
+                            <button class="btn btn-primary col-auto border-0 fw-bold "
+                                style="background:linear-gradient(to right, #74A8D8, #84D7AA); border-radius:32px; height:40px; width:250px;">Learn
+                                More</button>
+                        </div>
+                        <!-- <a href="https://app.elationpassport.com/passport/login/" target="_blank"
                             class="btn btn-primary col-auto fw-bold"
                             style="width:48%; background-color:#84AFD7 !important">Member
-                            Sign-in</a>
+                            Sign-in</a> -->
                     </div>
                 </div>
                 <div class="col-auto">
-                    <p class="mt-5 cursor-pointer" style="font-size:20px;color:#444">Accepting new patients in Nashville
-                        -
-                        offering
-                        in-home
-                        </br>
-                        visits and virtual care. <span class="badge rounded-pill bg-dark cursor-pointer"
-                            data-bs-toggle="modal" data-bs-target="#healthcareModal">More Details </span>
-
-                    </p>
+                    <img src="./assets/hero.svg" />
                 </div>
             </div>
 
-            <div class="row mt-5 justify-content-center mb-5">
-                <div class="card" style="height:320px;width:430px; border-radius: 12px;">
+            <div class="row mt-5 justify-content-evenly mb-5 bg-white">
+
+                <div class="col-auto mt-5">
+                    <h5 class="fw-bold">Primary Care the way it should be</h5>
+                    <ul class="custom-list ps-0">
+                        <li class="mb-2">Accesible</li>
+                        <li class="mb-2">Afforable</li>
+                        <li class="mb-2">Convenient</li>
+                        <li class="mb-2">Whole family care for patients 16+</li>
+
+                    </ul>
+                </div>
+                <div class="col-auto mt-5">
+                    <h5 class="card-title fw-bold">Care Where You Want It:</h5>
+                    <ul class="custom-list ps-0 ">
+                        <li class="mb-2">In the comfort and security of your own home</li>
+                        <li class="mb-2">No more trips to the doctor, we come to you!</li>
+                        <li class="mb-2">No parking or waiting room hassels</li>
+                    </ul>
+                </div>
+                <div class="col-auto mt-5">
+                    <h5 class="card-title fw-bold">Care When You Want It</h5>
+                    <ul class=" custom-list ps-0">
+                        <li class="mb-2">No long waits to get an appointment</li>
+                        <li class="mb-2">Most appointments within 24 hours of contacting us</li>
+                        <li class="mb-2">No more choosing between work and your health</li>
+                        <li class="mb-2">Available 6AM-8PM 7 days/week</li>
+                    </ul>
+                </div>
+                <!-- <div class="card" style="height:320px;width:430px; border-radius: 12px;">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Primary Care the way it should be</h5>
                         <ul class="custom-list ps-0">
@@ -162,7 +188,7 @@
                     <div class="card-footer">
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -229,22 +255,74 @@
                 <h1 class="text-center mt-5 fw-bold mb-5">Meet your care team</h1>
                 <p class="text-center mb-5">We're a team of healthcare professionals and technologists dedicated to
                     modernizing </br> health and wellness on <strong>your</strong> time!</p>
-                <div class="tester row justify-content-evenly mt-5">
-                    <div class="col-auto">
-                        <div class="text-center">
-                            <img src="./assets/huy_tran.jpeg" style="height:250px; width:250px ;border-radius:50%;" />
-                            <p class="fw-bold mt-2">Huy Tran</p>
+                <ul class="nav nav-tabs" id="myTab" role="tablist" style="width:60%;margin:auto;">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                            type="button" role="tab" aria-controls="home" aria-selected="true">Clinical team</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                            type="button" role="tab" aria-controls="profile" aria-selected="false">Operations
+                            team</button>
+                    </li>
+                    <!-- <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                            type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+                    </li> -->
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="tester row justify-content-evenly mt-5">
+
+                            <div class="col-auto">
+                                <img src="./assets/adam.jpeg" style="height:250px; width:250px ;border-radius:50%;" />
+                                <p class="text-center mt-2">Dr. Adam Silverman, MD</p>
+                            </div>
+                            <div class="col-auto">
+                                <img src="./assets/taura.jpeg" style="height:250px; width:250px ;border-radius:50%;" />
+                                <p class="text-center mt-2">Dr. Taura Long, MD</p>
+                            </div>
+
+                            <!-- <div class="col-auto" style="height:250px; width:250px;">
+                                <img src="./assets/adam.jpeg" style="height:250px; width:250px ;border-radius:50%;" /> 
+                                 <p class="text-center mt-2">Adam Silverman, MD</p>
+                            </div> -->
                         </div>
                     </div>
-                    <div class="col-auto">
-                        <img src="./assets/adam.jpeg" style="height:250px; width:250px ;border-radius:50%;" />
-                        <p class="text-center fw-bold mt-2">Adam Silverman</p>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="tester row justify-content-evenly mt-5">
+                            <div class="col-auto">
+                                <div class="text-center">
+                                    <img src="./assets/huy_2.png"
+                                        style="height:250px; width:250px ;border-radius:50%;" />
+                                    <p class="mt-2">Huy Tran, CEO & Co-Founder</p>
+                                </div>
+
+                            </div>
+                            <div class="col-auto">
+                                <img src="./assets/adam.jpeg" style="height:250px; width:250px ;border-radius:50%;" />
+                                <p class="text-center  mt-2">Dr. Adam Silverman, CMO, MD</p>
+                            </div>
+                            <div class="col-auto">
+                                <img src="./assets/taura.jpeg" style="height:250px; width:250px ;border-radius:50%;" />
+                                <p class="text-center  mt-2">Dr. Taura Long, CCO, MD</p>
+                            </div>
+                            <div class="col-auto">
+                                <div class="text-center">
+                                    <img src="./assets/kaitlin_pendleton.jpg"
+                                        style="height:250px; width:250px ;border-radius:50%;scale:calc()" />
+                                    <p class="mt-2">Katlin Pendleton, CFO </p>
+                                </div>
+                            </div>
+                            <!-- <div class="col-auto" style="height:250px; width:250px;">
+                                <img src="./assets/adam.jpeg" style="height:250px; width:250px ;border-radius:50%;" /> 
+                                 <p class="text-center mt-2">Adam Silverman, MD</p>
+                            </div> -->
+                        </div>
                     </div>
-                    <div class="col-auto">
-                        <img src="./assets/taura.jpeg" style="height:250px; width:250px ;border-radius:50%;" />
-                        <p class="text-center fw-bold mt-2">Taura Long</p>
-                    </div>
+                    <!-- <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div> -->
                 </div>
+
 
             </div>
             <div class="">
@@ -305,7 +383,7 @@
                     <div class=" col-lg-4 text-center">
                         <img src="./assets/globe.svg" />
                         <p class="text-center fw-bold mt-2">Affordability</p>
-                        <p class="mt-2">One annual fee provides unlimited home and telehealth visits, inclusive of
+                        <p class="mt-2">Your membership fee provides home and telehealth visits, inclusive of
                             phone
                             calls, texts, emails, and portal access to your health record. </p>
                     </div>
@@ -367,7 +445,8 @@
                                 <textarea class="form-control" name="message" id="clientMessage2"></textarea>
                             </div>
                             <div id="formActions" class="d-grid gap-2">
-                                <button type="btn" class="btn btn-primary" id="submitBtnMain">Submit</button>
+                                <button type="btn" class="btn btn-primary" id="submitBtnMain"
+                                    style-="background:linear-gradient(to right, #74A8D8, #84D7AA);">Submit</button>
                             </div>
                         </form>
                     </div>
