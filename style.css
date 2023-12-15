@@ -61,3 +61,21 @@ footer {
     color: "white" !important;
     width: 100%
 }
+
+
+/* For screens larger than 992px (lg screens) */
+@media (min-width: 992px) {
+    .dpc-text {
+        margin: 0 auto;
+    }
+}
+
+/* For screens smaller than 992px */
+@media (max-width: 991px) {
+    .dpc-text {
+        width: auto;
+        /* Removing width for smaller screens */
+        margin: 0;
+        /* Resetting margin */
+    }
+}
