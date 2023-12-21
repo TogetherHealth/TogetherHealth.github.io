@@ -16,10 +16,15 @@ ul li {
     color: #000;
     /* Customize bullet color if needed */
     display: inline-block;
-    width: 1em;
+    width: 10px;
+    height: 10px;
     /* Adjust the width as needed for spacing */
     margin-left: -1em;
     /* Negative margin to overlap with the text */
+}
+
+.navbar-brand {
+    font-size: 12px !important;
 }
 
 footer {
