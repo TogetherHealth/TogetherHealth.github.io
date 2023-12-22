@@ -7,19 +7,20 @@ body {
 
 ul li {
     list-style: none;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
-.custom-list li::before {
+.custom-list>u l>li::before {
     content: '\2022';
     /* Unicode character for a bullet */
-    color: #000;
+    color: black;
     /* Customize bullet color if needed */
-    display: inline-block;
-    width: 10px;
-    height: 10px;
+    /* display: inline-block; */
+    font-size: 55px;
+
+    line-height: 1;
     /* Adjust the width as needed for spacing */
-    margin-left: -1em;
+    /* margin-left: -1em; */
     /* Negative margin to overlap with the text */
 }
 
