@@ -6,11 +6,11 @@ body {
 }
 
 ul li {
-    list-style: none;
+    /* list-style: none;    */
     /* text-decoration: none; */
 }
 
-.custom-list>u l>li::before {
+.custom-list>ul>li::before {
     content: '\2022';
     /* Unicode character for a bullet */
     color: black;
