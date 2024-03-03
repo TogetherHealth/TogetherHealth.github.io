@@ -28,7 +28,23 @@
 
 <body style="font-family:Montserrat;">
     <div class="container-fluid ">
-
+        <div class="modal fade" id="allServiesModal" tabindex="-1" aria-labelledby="allServicesLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="allServicesLabel">Membership Benefits</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./assets/benefits.png" style="height:100%; width:100%;" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Modal -->
         <div class="modal fade" id="healthcareModal" tabindex="-1" aria-labelledby="healthcareModalLabel"
             aria-hidden="true">
@@ -207,10 +223,9 @@
                         style="height:220px" /></br>
                     <!-- <span class="badge rounded-pill bg-dark">View all services</span> -->
 
-                    <span class=" d-none d-md-block badge rounded-pill bg-dark p-3"
-                        style="background-color:#417D75 !important;">View
-                        all
-                        services</span>
+                    <span class=" d-none d-md-block badge rounded-pill bg-dark p-3 "
+                        style="background-color:#417D75 !important; cursor:pointer" data-bs-toggle="modal"
+                        data-bs-target="#allServiesModal">View Membership Benefits</span>
                 </div>
                 <h2 class="d-block d-md-none text-center fw-bold text-decoration-underline ">Our Services Include</h2>
                 <div class="col-lg-3 col-sm-auto mt-5">
