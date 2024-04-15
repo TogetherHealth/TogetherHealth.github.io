@@ -36,10 +36,11 @@ footer {
 }
 
 .section-container {
-    background-image: url('./assets/wave_bg.svg');
+    background-color: #C6DCE2;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 0px;
 
     /* background- */
 }
