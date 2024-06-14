@@ -270,33 +270,69 @@
                 </div>
             </div>
              <!-- Meet the care team -->
-             <div style="background-color: white;">
-                <h1 class="text-center mt-5 fw-bold mb-5">Meet the care team</h1>
-                <!-- <p class="text-center mb-5">We're a team of healthcare professionals and technologists dedicated to
-                    modernizing <br> health and wellness on <strong>your</strong> time!</p> -->
-                <div class="row justify-content-evenly mt-5 bg-light p-3">
-                    <div class="col-12 col-md-5 text-center">
-                        <img src="./assets/Dr Long.jpg" style="height:300px; width:300px; border-radius:50%;" />
-                        <p class="fw-bold mt-2">Taura Long, MD </p>
-                        <p class="mt-2 mb-5">Dr. Long is board certified in Family Medicine. She has special interest in preventative primary care for the entire family from age 6 to beyond. Dr. Long is humbled by the trust patients place in her and treats every patient with the utmost respect.  
-
-                            Following her undergraduate studies at Xavier University of LA, she attended Southern Illinois University where she received a post-baccalaureate certificate. Dr. Long then went on to receive her Medical Degree from the University of Cincinnati College of Medicine. She went back to her home state of Tennessee to complete her residency in Jackson, TN. She has an up-to-date perspective in all aspects of Family Medicine. Outside of work and family, her interests include community service, mission trips and travel.
-                            
-                            Dr. Long has been a girl-scout troop leader for troop 6000 since 2019. Fun fact: she chose the specialty of family medicine after traveling with the family medicine team as a medical student. Traveling to Tanzania providing healthcare to an underserved region was life changing in more than one way.  Not to mention, she also worked in Opotiki, New Zealand for 6 months with the Māori population; again, life changing as well. Dr. Long was raised in Memphis, TN and currently resides in Nashville, TN.</p>
-                    </div>
-                    <div class="col-12 col-md-5 text-center">
-                        <img src="./assets/Natalie.jpg" style="height:300px; width:300px; border-radius:50%;" />
-                        <p class="fw-bold mt-2">Natalie Kendrick, RN, MSN, AGACNP-BC </p>
-                        <p class="fw-normal">She joins Together Health as a nurse and office manager. Natalie lives in Nashville with her husband and daughter. She earned her bachelor’s degree from Belmont University in 2006 and completed her nursing training at Vanderbilt University, obtaining a Master’s of Science in Nursing in 2013.
-
-                            Natalie is a board-certified Adult and Geriatric Acute Care Nurse Practitioner. She began her career practicing in hematology oncology and bone marrow transplant at Vanderbilt University Medical Center in 2014. Since then, she has also worked at the University of Colorado at Denver Hospital and has had the privilege of teaching at Belmont University in the Math & Sciences Department. 
-                            
-                            She is passionate about ensuring that all people have access to compassionate and competent healthcare, including education that allows them to participate in their own healthcare decisions.</p>
-                    </div>
-                </div>
+<div style="background-color: white;">
+    <h1 class="pt-3 text-center mt-5 fw-bold">Meet the team</h1>
+    <!-- <p class="text-center mb-5">We're a team of healthcare professionals and technologists dedicated to
+        modernizing <br> health and wellness on <strong>your</strong> time!</p> -->
+    <div class="row justify-content-evenly mt-5 p-3">
+        <div class="Card col-md-3 text-center border p-5 shadow-sm">
+            <img src="./assets/Dr Long.jpg" style="height:150px; width:150px; border-radius:50%;" />
+            <p class="fw-bold mt-2">Taura Long</p>
+            <p>Family Medicine Physician</p>
+            <button type="button" class="btn w-50 fw-bold" data-bs-toggle="modal" data-bs-target="#longModal" style="background-color: #12687C; border-color: #12687C; color: white;">More info</button>
+        </div> <!-- This closing div was missing -->
+        <div class="Card col-md-3 text-center border p-5 shadow-sm">
+            <img src="./assets/Natalie.jpg" style="height:150px; width:150px; border-radius:50%;" />
+            <p class="fw-bold mt-2">Natalie Kendrick</p>
+            <p>RN, MSN, AGACNP-BC</p>
+            <button type="button" class="btn w-50 fw-bold" data-bs-toggle="modal" data-bs-target="#kendrickModal" style="background-color: #12687C; border-color: #12687C; color: white;">More info</button>
+        </div>
+    </div>
+</div>
+<!-- Taura Long Modal -->
+<div class="modal fade" id="longModal" tabindex="-1" aria-labelledby="longModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="longModalLabel">Taura Long, MD</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-                <h1 class="text-center fw-bold mt-5 mb-5">Membership</h1>
+            <div class="modal-body">
+                <!-- Add bio content here -->
+                <p>Dr. Long is board certified in Family Medicine. She has special interest in preventative primary care for the entire family from age 6 to beyond. Dr. Long is humbled by the trust patients place in her and treats every patient with the utmost respect.  <br>
+                    <br>
 
+                    Following her undergraduate studies at Xavier University of LA, she attended Southern Illinois University where she received a post-baccalaureate certificate. Dr. Long then went on to receive her Medical Degree from the University of Cincinnati College of Medicine. She went back to her home state of Tennessee to complete her residency in Jackson, TN. She has an up-to-date perspective in all aspects of Family Medicine.,Outside of work and family, her interests include community service, mission trips and travel. <br>
+                    <br>
+                    
+                    Dr. Long has been a girl-scout troop leader for troop 6000 since 2019. Fun fact: she chose the specialty of family medicine after traveling with the family medicine team as a medical student. Traveling to Tanzania providing healthcare to an underserved region was life changing in more than one way.  Not to mention, she also worked in Opotiki, New Zealand for 6 months with the Māori population; again, life changing as well. Dr. Long was raised in Memphis, TN and currently resides in Nashville, TN.
+                    </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Natalie Kendrick Modal -->
+<div class="modal fade" id="kendrickModal" tabindex="-1" aria-labelledby="kendrickModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="kendrickModalLabel">Natalie Kendrick, RN</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                
+            </div>
+            <div class="modal-body">
+                <!-- Add the bio content here -->
+                <p>She joins Together Health as a nurse and office manager. Natalie lives in Nashville with her husband and daughter. She earned her bachelor’s degree from Belmont University in 2006 and completed her nursing training at Vanderbilt University, obtaining a Master’s of Science in Nursing in 2013. <br><br>
+
+                    Natalie is a board-certified Adult and Geriatric Acute Care Nurse Practitioner. She began her career practicing in hematology oncology and bone marrow transplant at Vanderbilt University Medical Center in 2014. Since then, she has also worked at the University of Colorado at Denver Hospital and has had the privilege of teaching at Belmont University in the Math & Sciences Department. <br><br>
+                    
+                    She is passionate about ensuring that all people have access to compassionate and competent healthcare, including education that allows them to participate in their own healthcare decisions.</p>
+            </div>
+        </div>
+    </div>
+</div>
+                <h1 class="text-center fw-bold mt-5 mb-5">Membership</h1>
                 <div class="pb-1 d-none d-md-block" style="width:60%; margin:auto; background-color:white;">
                     <h2 class="text-center pt-5 pb-3">Individual Plan Starting at <strong>$41</strong> / mo</h2>
                     <h6 class="text-center text-secondary ">Individual + Family Plan Starting at <strong>$72</strong> /
@@ -611,7 +647,7 @@
                 </div>
                 <p class="text-center">&copy; 2023 Together Health</p>
             </div>
-            <div class="col-auto d-lg-block">
+            <div class="col-auto">
                 <p className="fw-bold"> Phone: (615) 283-3186</p>
                 <p className="fw-bold"> Fax: (615) 716-3666</p>
             </div>
