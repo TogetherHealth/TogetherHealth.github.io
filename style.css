@@ -36,7 +36,7 @@ footer {
 }
 
 .section-container {
-    background-color: #C6DCE2;
+    background-color: #C5E0E0;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -69,6 +69,14 @@ footer {
     width: 100%
 }
 
+.gradient-text {
+    background-image: linear-gradient(to right, #194242 40%, #509191);
+    color: transparent;
+    -webkit-background-clip: text;
+    /* For Safari/Chrome */
+    background-clip: text;
+
+}
 
 /* For screens larger than 992px (lg screens) */
 @media (min-width: 992px) {
@@ -86,4 +94,3 @@ footer {
         /* Resetting margin */
     }
 }
-
