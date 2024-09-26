@@ -69,6 +69,15 @@ footer {
     width: 100%
 }
 
+.btn-secondary {
+    border: none;
+    border-color: none;
+    background-color: #40A8A8 !important;
+    color: "white" !important;
+    padding: 5px;
+    border-radius: 5px;
+}
+
 .gradient-text {
     background-image: linear-gradient(to right, #194242 40%, #509191);
     color: transparent;
