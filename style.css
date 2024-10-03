@@ -86,6 +86,27 @@ footer {
     background-clip: text;
 
 }
+.gradient-button {
+    background-image: linear-gradient(to right, #194242 40%, #509191) !important;
+    color: white !important;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 80%;
+}
+
+.card-clickable {
+    background-color: #509191; /* Default darker color for non-active cards */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.card-clickable.active {
+    background-color: #40A8A8; /* Lighter green for active card */
+}
+
+
 
 /* For screens larger than 992px (lg screens) */
 @media (min-width: 992px) {
