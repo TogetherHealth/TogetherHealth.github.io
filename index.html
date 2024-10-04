@@ -17,7 +17,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@100;200;300;400;700;800&display=swap"
         rel="stylesheet">
-
+    <script src='./main.js'></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -115,7 +115,13 @@
         <div class="container-fluid" style="height:100vh; margin-top: 7%;">
             <div class="row justify-content-evenly">
                 <div class="col-lg-5 mt-5 ps-3">
-                    <p style="font-size:20px;color:#444">
+                    <p class="d-none d-md-block" style="font-size:20px;color:#444">
+                        Your <strong class="gradient-text">healthcare</strong>, on your <strong
+                            class="gradient-text">time</strong>, in
+                        your <strong class="gradient-text">home</strong>.
+
+                    </p>
+                    <p class="d-block d-md-none" style="font-size:15px;color:#444">
                         Your <strong class="gradient-text">healthcare</strong>, on your <strong
                             class="gradient-text">time</strong>, in
                         your <strong class="gradient-text">home</strong>.
@@ -124,19 +130,24 @@
                     <h1 class="fw-bold d-none d-md-block mt-5 gradient-text" style="font-size:60px;">
                         Together&nbsp;Health</h1>
 
-                    <h1 class="fw-bold d-block d-md-none mt-5 gradient-text" style="font-size:40px;">
+                    <h1 class="fw-bold d-block d-md-none gradient-text" style="font-size:40px;">
                         Together&nbsp;Health</h1>
                     <p class="d-none d-md-block mt-3 w-75">Nashville, TN and Surrounding Areas, please contact us at
                         <strong class="gradient-text">info@togetherhealth.co</strong> to learn
                         more.
                     </p>
-                    <p class="d-block d-md-none mt-3 w-75" style="font-size:11px;">Nashville, TN and Surrounding Areas,
-                        please
-                        contact us at
+
+                    <div class="row justify-content-center ">
+                        <div class="col-auto  d-block d-md-none">
+                            <img src="./assets/image.png" style="height: 295px;" class="mt-5" />
+                        </div>
+                    </div>
+                    <p class="d-block d-md-none mx-auto mt-5 pt-5" style="font-size:12px; width:98%;">
+                        Nashville, TN and Surrounding Areas, please contact us at
                         <strong class="gradient-text">info@togetherhealth.co</strong> to learn
                         more.
                     </p>
-                    <div class="row justify-content-center mt-5">
+                    <div class="row justify-content-center">
                         <div class="col mx-auto">
                             <a target="_blank" href="https://app.elationpassport.com/passport/login/"
                                 class="btn btn-primary border-0 mt-5 fw-bolder p-3 shadow-sm"
@@ -152,15 +163,12 @@
 
 
                         </div>
-                        <!-- <a href="https://app.elationpassport.com/passport/login/" target="_blank"
-                            class="btn btn-primary col-auto fw-bold"
-                            style="width:48%; background-color:#84AFD7 !important">Member
-                            Sign-in</a> -->
                     </div>
                 </div>
                 <div class="col-auto d-none d-md-block">
                     <img src="./assets/image.png" style="height: 570px;" class="mt-3" />
                 </div>
+
             </div>
         </div>
         <!-- 
@@ -181,7 +189,7 @@
                                 <h1 class="fw-bold text-white mb-5"></h1>
                                 <p class="text-white" style="line-height: 2.8;">
                                 </p>
-                    
+
                                 <div class="row justify-content-end mt-5">
                                     <!-- <div class="col-auto">
                                         <button class="btn text-white" style="background-color:#40A8A8;">Action</button>
@@ -190,9 +198,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 d-none d-md-block">
                         <div id="carouselCardContainer" class="row justify-content-center mt-5">
-                            
+
                         </div>
 
                     </div>
@@ -206,15 +214,17 @@
                 <h1 class="pt-3 text-center mt-5 fw-bold" style="color: #194242">Your care team</h1>
                 <div class="row justify-content-evenly mt-5 p-3" style="background-color: white;">
                     <!-- Taura Long -->
-                    <div class="row align-items-center mb-3"> 
+                    <div class="row align-items-center mb-3">
                         <div class="col-md-4 text-center">
-                            <img src="./assets/Dr Long.jpg" style="height:200px; width:200px; border-radius:12px; margin-bottom: 10px;"
+                            <img src="./assets/Dr Long.jpg"
+                                style="height:200px; width:200px; border-radius:12px; margin-bottom: 10px;"
                                 alt="Taura Long" />
                             <h4 class="fw-bold">Taura Long</h4>
                             <p class="fw-light">Family Medicine Physician</p>
                         </div>
                         <div class="col-md-8">
-                            <p style="margin-top: 0;" class="bg-light p-4">Dr. Taura Long is a board-certified Family Medicine Physician with a passion for
+                            <p style="margin-top: 0;" class="bg-light p-4">Dr. Taura Long is a board-certified Family
+                                Medicine Physician with a passion for
                                 preventive primary care for patients of all ages. She completed her medical degree at
                                 the University of Cincinnati College of Medicine and her residency in Jackson, TN. Dr.
                                 Long is dedicated to providing respectful, personalized care and has a diverse
@@ -225,10 +235,10 @@
                     </div>
                 </div>
             </div>
-            
+
 
             <h1 class="text-center fw-bolder mt-5 mb-5" style="color: #194242">Membership</h1>
-            <div class="container py-5 " style="height: 100vh;" >
+            <div class="container py-5 " style="height: 100vh;">
                 <div class="row justify-content-center">
                     <!-- Individual Plan Card -->
                     <div class="col-md-5 mb-4">
@@ -251,7 +261,7 @@
                     </div>
 
                     <!-- Family Plan Card -->
-                    <div class="col-md-5 mb-4">
+                    <div class="col-md-5 mb-5">
                         <div class="card shadow-sm h-100">
                             <div class="card-body text-center">
                                 <h3 class="card-title fw-bold">Individual + Family </h3>
@@ -271,8 +281,8 @@
                     </div>
                 </div>
             </div>
-            <div class="container py-5">
-                <div class="row">
+            <div class="container">
+                <div class="row mt-5">
                     <!-- FAQ Section -->
                     <div class="col-md-6">
                         <h1 class="text-center fw-bold mt-3 mb-5">FAQ</h1>
@@ -489,7 +499,7 @@
                     </div>
 
                     <!-- Contact Form Section -->
-                    <div class="col-md-6">
+                    <!-- <div class="col-md-6">
                         <h1 class="text-center fw-bold mt-3 mb-5">Contact us!</h1>
                         <form>
                             <div class="mb-3">
@@ -506,7 +516,7 @@
                                 <button type="submit" class="btn gradient-button w-40">Send message</button>
                             </div>
                         </form>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -537,96 +547,6 @@
         </footer>
     </div>
     </div>
-
-
-
-    <script type="text/javascript">
-        //Dynamic rendering of the carousel cards
-        //Listeners for the carousel cards;
-        document.addEventListener('DOMContentLoaded', function () {
-    const container = document.querySelector('#carouselCardContainer');
-    const targetHeading = document.querySelector('.fw-bold.text-white.mb-5'); // The heading element in the target section
-    const targetText = document.querySelector('.text-white[style="line-height: 2.8;"]'); // The paragraph element in the target section
-
-    const carouselCards = [
-        {
-            title: 'Membership',
-            subtitle: 'Our membership plan provides care where you are, with not having physical locations, we are able to transfer the cost savings to you as a patient.',
-            icon: '<box-icon name=body></box-icon>'
-        },
-        {
-            title: 'Independent',
-            subtitle: 'As an independent practice, we are not incentivized by volume or reimbursements from insurance; therefore, we can spend the appropriate time to ensure we provide a personalized care experience for our members.',
-            icon: '<box-icon name=body></box-icon>'
-        },
-        {
-            title: 'Our founding team',
-            subtitle: 'We are founded by a diverse team of clinical and operational experts focused on health equity, addressing the social determinants of health and easing access to high-quality primary care for all.',
-            icon: '<box-icon name=body></box-icon>'
-        },
-        {
-            title: 'Urgent care',
-            subtitle: 'Did you wake up not feeling well? Twist an ankle? Need a COVID test? We do it all. It can take several hours to get to and be seen in an Urgent Care. Call us before packing up and heading out of your home to sit in a waiting room along with others who may not be feeling well.',
-            icon: '<box-icon name=body></box-icon>'
-        },
-        {
-            title: 'Primary care',
-            subtitle: 'We are a passionate group of primary care providers. We are skilled at caring for the full spectrum of wellness and illness care for you and your family and children from ages of 8 to 26.',
-            icon: '<box-icon name=body></box-icon>'
-        }
-    ];
-
-    let htmlString = '';
-    carouselCards.map((item, index) => {
-        let cardStringHtml = `
-            <div class="col-8 card-clickable ${index === 0 ? 'active' : ''} mb-3" data-index="${index}" style="cursor: pointer; height: 100px;">
-                <div class="row align-items-center mb-3" style="border-radius:5px;">
-                    <div class="col-md-4 text-center">
-                        <div style="color:white; height 80px; width: 80px;">
-                           ${item.icon}
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <h3 class="fw-bold mt-3 text-white">
-                            ${item.title}</h3>
-                        <p class="text-white" style="line-height:1.8;font-size: 11px; max-height:41px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">${item.subtitle}</p>
-                    </div>
-                </div>
-            </div>
-        `;
-
-        htmlString += cardStringHtml;
-    });
-
-    container.innerHTML = htmlString;
-
-    // Automatically load the "Membership" card's content into the target area
-    targetHeading.innerHTML = carouselCards[0].title; // Set Membership title
-    targetText.innerHTML = carouselCards[0].subtitle; // Set Membership subtitle
-
-    // Add click event listeners to each card
-    const clickableCards = document.querySelectorAll('.card-clickable');
-    clickableCards.forEach((card) => {
-        card.addEventListener('click', function () {
-            const index = card.getAttribute('data-index');
-            const selectedCard = carouselCards[index];
-
-            // Remove the active class from all cards
-            clickableCards.forEach((c) => c.classList.remove('active'));
-
-            // Add the active class to the clicked card
-            card.classList.add('active');
-
-            // Update the target content with the selected card's title and subtitle
-            targetHeading.innerHTML = selectedCard.title;
-            targetText.innerHTML = selectedCard.subtitle;
-        });
-    });
-});
-
-
-   
-    </script>
 </body>
 
 
