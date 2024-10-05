@@ -5,6 +5,31 @@ body {
     padding: 0px;
 }
 
+.accordion-button:focus {
+    background-color: #C5E0E0 !important;
+    border: none;
+    /* Change background color */
+    color: #333 !important;
+    /* Change text color */
+    font-weight: bold;
+    box-shadow: none;
+    /* Make the text bold */
+}
+
+.accordion-button:not(.collapsed) {
+    color: #333 !important;
+    background-color: #e7f1ff;
+
+}
+
+#navBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    transition: top 0.3s ease-in-out;
+}
+
 ul li {
     /* list-style: none;    */
     /* text-decoration: none; */
@@ -86,6 +111,7 @@ footer {
     background-clip: text;
 
 }
+
 .gradient-button {
     background-image: linear-gradient(to right, #194242 40%, #509191) !important;
     color: white !important;
@@ -94,16 +120,19 @@ footer {
     font-size: 16px;
     border-radius: 12px;
     cursor: pointer;
-    width: 80%;
+
 }
 
 .card-clickable {
-    background-color: #509191; /* Default darker color for non-active cards */
-    transition: background-color 0.3s ease; /* Smooth color transition */
+    background-color: #509191;
+    /* Default darker color for non-active cards */
+    transition: background-color 0.3s ease;
+    /* Smooth color transition */
 }
 
 .card-clickable.active {
-    background-color: #40A8A8; /* Lighter green for active card */
+    background-color: #40A8A8;
+    /* Lighter green for active card */
 }
 
 

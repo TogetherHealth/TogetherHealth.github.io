@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@100;200;300;400;700;800&display=swap"
         rel="stylesheet">
@@ -24,9 +25,11 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
+
 </head>
 
 <body style="font-family:Montserrat;">
+
     <div class="container-fluid m-0 p-0">
         <div class="modal fade" id="allServiesModal" tabindex="-1" aria-labelledby="allServicesLabel"
             aria-hidden="true">
@@ -80,15 +83,15 @@
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container p-2" style="width: 80%;
-            margin: 0 auto;
-            background-color: #C3CDCD !important;
-            border-bottom-left-radius: 12px;
-            border-bottom-right-radius: 12px;
-            position: fixed;
-            top: 0;
-            left: 10%;">
+        <nav id="navBar" class="navbar navbar-expand-lg navbar-light" style="width: 80%;
+        margin: 0 auto;
+        background-color: #C3CDCD !important;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        position: fixed;
+        top: 0;
+        left: 10%;">
+            <div class="container p-2">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -114,7 +117,7 @@
 
         <div class="container-fluid" style="height:100vh; margin-top: 7%;">
             <div class="row justify-content-evenly">
-                <div class="col-lg-5 mt-5 ps-3">
+                <div class="col-lg-5 mt-5 ps-3" data-aos="fade-up">
                     <p class="d-none d-md-block" style="font-size:20px;color:#444">
                         Your <strong class="gradient-text">healthcare</strong>, on your <strong
                             class="gradient-text">time</strong>, in
@@ -132,17 +135,18 @@
 
                     <h1 class="fw-bold d-block d-md-none gradient-text" style="font-size:40px;">
                         Together&nbsp;Health</h1>
-                    <p class="d-none d-md-block mt-3 w-75">Nashville, TN and Surrounding Areas, please contact us at
+                    <p class="d-none d-md-block mt-3 w-75 mt-5" style="line-height: 2.5;">Nashville, TN and Surrounding
+                        Areas, please contact us at
                         <strong class="gradient-text">info@togetherhealth.co</strong> to learn
                         more.
                     </p>
 
-                    <div class="row justify-content-center ">
+                    <div class="row justify-content-center " data-aos="fade-up">
                         <div class="col-auto  d-block d-md-none">
                             <img src="./assets/image.png" style="height: 295px;" class="mt-5" />
                         </div>
                     </div>
-                    <p class="d-block d-md-none mx-auto mt-5 pt-5" style="font-size:12px; width:98%;">
+                    <p class="d-block d-md-none mx-auto mt-5 pt-5" style="font-size:12px; width:98%; margin-top:15px;">
                         Nashville, TN and Surrounding Areas, please contact us at
                         <strong class="gradient-text">info@togetherhealth.co</strong> to learn
                         more.
@@ -150,7 +154,7 @@
                     <div class="row justify-content-center">
                         <div class="col mx-auto">
                             <a target="_blank" href="https://app.elationpassport.com/passport/login/"
-                                class="btn btn-primary border-0 mt-5 fw-bolder p-3 shadow-sm"
+                                class="btn btn-primary border-0 mt-5 fw-bolder p-2 shadow-sm"
                                 style="background-color:#194245 !important; border-radius:12px;">
                                 Patient Portal</a>
 
@@ -158,14 +162,14 @@
                         </div>
                         <div class="col mx-auto">
                             <a target="_blank" href="https://togetherhealth.hint.com/signup" target="_blank"
-                                class="btn btn-primary border-0 fw-bolder mt-5 p-3"
+                                class="btn btn-primary border-0 fw-bolder mt-5 p-2"
                                 style="background-color:#40A8A8 !important; border-radius:12px;">Enroll</a>
 
 
                         </div>
                     </div>
                 </div>
-                <div class="col-auto d-none d-md-block">
+                <div class="col-auto d-none d-md-block" data-aos="fade-left">
                     <img src="./assets/image.png" style="height: 570px;" class="mt-3" />
                 </div>
 
@@ -197,6 +201,16 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="row justify-content-evenly d-block d-md-none">
+                            <div class="col-auto">
+                                <button id="backBtn" class="btn btn-dark">Back</button>
+                            </div>
+                            <div class="col-auto">
+                                <button id="nextBtn" class="btn btn-dark">Next</button>
+                            </div>
+
+
+                        </div>
                     </div>
                     <div class="col-lg-6 d-none d-md-block">
                         <div id="carouselCardContainer" class="row justify-content-center mt-5">
@@ -208,22 +222,41 @@
             </div>
         </div>
 
-        <!-- Services -->
-        <div class="section-container">
-            <div class="bg-light">
-                <h1 class="pt-3 text-center mt-5 fw-bold" style="color: #194242">Your care team</h1>
-                <div class="row justify-content-evenly mt-5 p-3" style="background-color: white;">
-                    <!-- Taura Long -->
-                    <div class="row align-items-center mb-3">
-                        <div class="col-md-4 text-center">
-                            <img src="./assets/Dr Long.jpg"
-                                style="height:200px; width:200px; border-radius:12px; margin-bottom: 10px;"
-                                alt="Taura Long" />
-                            <h4 class="fw-bold">Taura Long</h4>
-                            <p class="fw-light">Family Medicine Physician</p>
-                        </div>
-                        <div class="col-md-8">
-                            <p style="margin-top: 0;" class="bg-light p-4">Dr. Taura Long is a board-certified Family
+        <!-- care team -->
+        <div class="" style="height:100vh;">
+            <h1 class="pt-3 text-center mt-5 fw-bold" style="color: #194242">Our care team</h1>
+
+            <!-- Taura Long -->
+            <div class="row justify-content-center mb-3 mt-5 pt-5">
+                <!-- <div class="col-auto text-left">
+                    <img src="./assets/Dr Long.jpg"
+                        style="height:320px; width:320px; border-radius:8px; margin-bottom: 10px;" alt="Taura Long" />
+
+                </div> -->
+                <div class="col-auto text-left d-none d-md-block">
+                    <img data-aos="fade-up-left" src="./assets/Dr Long.jpg"
+                        style="height:520px; width:520px; border-radius:12px; margin-bottom: 10px;" alt="Taura Long" />
+                    <div data-aos="fade-up-right" class="card shadow-sm border-0 p-4 w-50"
+                        style="position:relative; top:-200px;left: -150px;">
+
+                        <h4 class="fw-bold">Taura Long</h4>
+                        <p class="fw-light">Family Medicine Physician</p>
+                    </div>
+                </div>
+                <div class="col-auto text-left d-block d-md-none">
+                    <img data-aos="fade-up-left" src="./assets/Dr Long.jpg"
+                        style="height:320px; width:320px; border-radius:12px; margin-bottom: 10px;" alt="Taura Long" />
+
+                    <h4 class="fw-bold">Taura Long</h4>
+                    <p class="fw-light">Family Medicine Physician</p>
+                </div>
+                <div class="col-auto text-left d-none d-md-block">
+                    <box-icon type='logo' name='linkedin-square'></box-icon>
+
+
+                </div>
+                <!-- <div class="col-md-8 d-none d-md-block">
+                            <p class="bg-light p-4">Dr. Taura Long is a board-certified Family
                                 Medicine Physician with a passion for
                                 preventive primary care for patients of all ages. She completed her medical degree at
                                 the University of Cincinnati College of Medicine and her residency in Jackson, TN. Dr.
@@ -231,322 +264,400 @@
                                 background, including mission trips to Tanzania and working with the Māori population in
                                 New Zealand. She is deeply involved in her community as a Girl Scout troop leader and
                                 currently resides in Nashville, TN.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <h1 class="text-center fw-bolder mt-5 mb-5" style="color: #194242">Membership</h1>
-            <div class="container py-5 " style="height: 100vh;">
-                <div class="row justify-content-center">
-                    <!-- Individual Plan Card -->
-                    <div class="col-md-5 mb-4">
-                        <div class="card shadow-sm h-100">
-                            <div class="card-body text-center">
-                                <h3 class="card-title fw-bold">Individual</h3>
-                                <h4 class="mt-3"><strong>$41</strong></h4>
-                                <p class="fw-light">Billed monthly</p>
-                                <ul class="list-unstyled mt-4 mb-4">
-                                    <li class="mb-2">Home-based and virtual primary care visits</li>
-                                    <li class="mb-2">Personalized care coordination for specialist care, lab testing,
-                                        and radiology</li>
-                                    <li class="mb-2">Dedicated care team available by phone, email, and text</li>
-                                    <li class="mb-2">Together Health newsletter</li>
-                                    <li>We partner with employers and institutions</li>
-                                </ul>
-                                <a href="#" class="btn gradient-button">Choose plan</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Family Plan Card -->
-                    <div class="col-md-5 mb-5">
-                        <div class="card shadow-sm h-100">
-                            <div class="card-body text-center">
-                                <h3 class="card-title fw-bold">Individual + Family </h3>
-                                <h4 class="mt-3"><strong>$72</strong></h4>
-                                <p class="fw-light">Billed monthly</p>
-                                <ul class="list-unstyled mt-4 mb-4">
-                                    <li class="mb-2">Home-based and virtual primary care visits</li>
-                                    <li class="mb-2">Personalized care coordination for specialist care, lab testing,
-                                        and radiology</li>
-                                    <li class="mb-2">Dedicated care team available by phone, email, and text</li>
-                                    <li class="mb-2">Together Health newsletter</li>
-                                    <li>We partner with employers and institutions</li>
-                                </ul>
-                                <a href="#" class="btn gradient-button">Choose plan</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row mt-5">
-                    <!-- FAQ Section -->
-                    <div class="col-md-6">
-                        <h1 class="text-center fw-bold mt-3 mb-5">FAQ</h1>
-                        <div class="accordion" id="faqAccordion">
-                            <!-- Question 1 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                        What is Together Health?
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                    data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        Together Health is a return to "old fashioned" medicine. It is a direct
-                                        financial
-                                        arrangement between patients and their physician...no insurance companies! By
-                                        becoming a
-                                        member, patients receive all the professional services offered by the physician
-                                        in the
-                                        comfort of their own home or via telehealth for a monthly (or yearly)
-                                        subscription fee. As
-                                        an added bonus, patients receive wholesale prices on lab tests and medications.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Question 2 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Is Together Health Insurance?
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                    data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        Simply put, no. It was not and is not intended to be "insurance" but rather
-                                        affordable care
-                                        for anyone.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Question 3 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                        What impact does my Together Health membership have on my existing insurance
-                                        plan?
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        Although Together Health does not accept insurance, there should be no impact to
-                                        your plan.
-                                        You should be able to use your health insurance to care provided outside of
-                                        Together Health
-                                        such as (Labs, Vaccines, etc.)
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Question 4 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingFour">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseFour" aria-expanded="false"
-                                        aria-controls="collapseFour">
-                                        If I enroll in the membership, can I still use my insurance company for lab
-                                        testing,
-                                        prescriptions, radiology and referrals to other physicians?
-                                    </button>
-                                </h2>
-                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                                    data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        The benefits you receive from your insurance company are determined by the
-                                        insurance
-                                        company. They should honor any lab or diagnostic testing, prescriptions and
-                                        referrals
-                                        ordered; however, that doesn't mean that they make it easy for patients and
-                                        physicians. We
-                                        encourage all patients to familiarize themselves with their coverage benefits as
-                                        insurance
-                                        companies routinely require "prior approval" or "prior authorizations" for
-                                        routine
-                                        diagnostic testing and services. We will do our best to find specialists to meet
-                                        your needs
-                                        that are covered by your health insurance company and will assist in the prior
-                                        authorization
-                                        processes they require. As an alternative, we have partnered with like-minded
-                                        companies to
-                                        offer affordable lab testing and medications. We are also building collaborative
-                                        relationships with multiple specialty physicians to ensure that you can receive
-                                        the care you
-                                        require, regardless of the changing insurance company rules.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Question 5 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingSix">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                        What is included in your membership?
-                                    </button>
-                                </h2>
-                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                                    data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        <ul class="">
-                                            <li>Home visits</li>
-                                            <li>Telehealth/video visits</li>
-                                            <li>Urinalysis</li>
-                                            <li>Home pregnancy test</li>
-                                            <li>COVID test</li>
-                                            <li>Flu test</li>
-                                            <li>Annual physical/wellness visit</li>
-                                            <li>Care coordination for specialty services, hospitalization, and radiology
-                                            </li>
-                                            <li>Form completion related to a visit</li>
-                                            <li>Electronic health record (EHR) portal access</li>
-                                            <li>Service schedule: 7 days/week, 365 days/year, 6 AM to 8 PM</li>
-                                            <li>Negotiated cash prices with lab and radiology partners</li>
-                                            <li>Phone, text, email access during regular business hours</li>
-                                            <li>Price Transparency</li>
-                                            <li>Quarterly newsletter</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Question 6 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingSeven">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseSeven" aria-expanded="false"
-                                        aria-controls="collapseSeven">
-                                        What isn't included in your membership?
-                                    </button>
-                                </h2>
-                                <div id="collapseSeven" class="accordion-collapse collapse"
-                                    aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        Lab and radiology testing. Vaccines. Medications. Physician visits outside of
-                                        Together
-                                        Health providers. ER and urgent care visits. Hospitalizations
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Question 7 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingEight">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseEight" aria-expanded="false"
-                                        aria-controls="collapseEight">
-                                        How much does it cost?
-                                    </button>
-                                </h2>
-                                <div id="collapseEight" class="accordion-collapse collapse"
-                                    aria-labelledby="headingEight" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        Individual Plan Starting at <strong>$41</strong> / mo <br />
-                                        Individual + Family Plan Starting at <strong>$72</strong> / mo
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Question 8 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingNine">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseNine" aria-expanded="false"
-                                        aria-controls="collapseNine">
-                                        Areas we are serving:
-                                    </button>
-                                </h2>
-                                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
-                                    data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        Nashville, Antioch, Bellevue, Brentwood, Franklin, Gallatin, La Vergne, Madison,
-                                        Mount
-                                        Juliet, Murfreesboro, and Smyrna.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Question 9 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTen">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                                        How do I become a member?
-                                    </button>
-                                </h2>
-                                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
-                                    data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        <a class="nav-link text-decoration-underline"
-                                            href="https://togetherhealth.hint.com/signup" target="_blank">Enroll
-                                            here</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Contact Form Section -->
-                    <!-- <div class="col-md-6">
-                        <h1 class="text-center fw-bold mt-3 mb-5">Contact us!</h1>
-                        <form>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter your email"
-                                    required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" rows="3"
-                                    placeholder="Type your message here" required></textarea>
-                            </div>
-                            <div class="d-flex justify-content-end mt-auto">
-                                <button type="submit" class="btn gradient-button w-40">Send message</button>
-                            </div>
-                        </form>
-                    </div> -->
-                </div>
+                        </div> -->
             </div>
 
         </div>
 
-        <!-- Footer -->
-        <footer class="row mt-5">
-            <div class="col-auto">
-                <p class="text-start">info@togetherhealth.co</p>
-                <p class="text-start">Your <strong>healthcare</strong> on your <strong>time</strong> </br> in your
-                    <strong>home</strong>
+        <h1 class="text-center fw-bolder mt-5 mb-5" style="color: #194242">Membership</h1>
+        <div class="container">
+            <div class=" row justify-content-center">
+
+                <!-- Individual Plan Card -->
+                <div class="col-lg-9 mb-4" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body text-left">
+                            <div class="row">
+                                <div class="col ps-5">
+                                    <h3 class="card-title fw-bold mt-3">Individual</h3>
+                                    <h1 class="mt-3">$41</h1>
+                                    <p class="fw-light" style="font-size:11px;">Billed monthly</p>
+                                </div>
+                                <div class="col">
+                                    <div class="p-3 ">
+                                        <ul class="list-group-item-light">
+                                            <li class="mb-2"></box-icon> Home-based
+                                                and virtual primary
+                                                care visits</li>
+                                            <li class="mb-2"><i class='bx bxs-heart'></i>Personalized care coordination
+                                                for specialist care, lab
+                                                testing,
+                                                and radiology</li>
+                                            <li class="mb-2"><i class='bx bxs-heart'></i>Dedicated care team available
+                                                by phone, email, and text
+                                            </li>
+                                            <li class="mb-2"><i class='bx bxs-heart'></i>Together Health newsletter</li>
+                                            <li>We partner with employers and institutions</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end">
+                            <div class="col-auto p-3 me-3">
+                                <a href="#" class="btn gradient-button border-0">Choose plan</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 mb-4" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body text-left">
+                            <div class="row">
+                                <div class="col ps-5">
+                                    <h3 class="card-title fw-bold">Individual + Dependent</h3>
+                                    <h1 class="mt-3">$72</h1>
+                                    <p class="fw-light" style="font-size:11px">Billed monthly</p>
+                                </div>
+                                <div class="col">
+                                    <div class="p-3 ">
+                                        <ul class="list-group-item-light">
+                                            <li class="mb-2"></box-icon> Home-based
+                                                and virtual primary
+                                                care visits</li>
+                                            <li class="mb-2"><i class='bx bxs-heart'></i>Personalized care coordination
+                                                for specialist care, lab
+                                                testing,
+                                                and radiology</li>
+                                            <li class="mb-2"><i class='bx bxs-heart'></i>Dedicated care team available
+                                                by phone, email, and text
+                                            </li>
+                                            <li class="mb-2"><i class='bx bxs-heart'></i>Together Health newsletter</li>
+                                            <li>We partner with employers and institutions</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end">
+                            <div class="col-auto p-3 me-3">
+                                <a href="#" class="btn gradient-button border-0">Choose plan</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center mt-5">
+                <!-- FAQ Section -->
+                <h1 class="text-center fw-bold mt-3 mb-5">FAQ</h1>
+                <div class="col-lg-9">
+                    <div class="accordion" id="faqAccordion">
+                        <!-- Question 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    About Together Health
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Together Health is a Primary Care practice where you can sign up to become a member.
+                                    As members, you have access to your care team where all visits are in-home or
+                                    virtually. This keeps you from the hassel of leaving your home when you're not
+                                    feeling your best.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Is Together Health Insurance?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Simply put, no. It was not and is not intended to be "insurance" but rather
+                                    affordable care
+                                    for anyone.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What impact does my Together Health membership have on my existing insurance
+                                    plan?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Finding an appointment with your primary care practice can be challenging, which
+                                    results in a visit to your urgent care. There are at times out of pocket cost that
+                                    you accrue. With our membership, we can help reduce some of those unnecessary
+                                    charges.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    If I enroll in the membership, can I still use my insurance company for lab
+                                    testing,
+                                    prescriptions, radiology and referrals to other physicians?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    The benefits you receive from your insurance company are determined by the
+                                    insurance
+                                    company. They should honor any lab or diagnostic testing, prescriptions and
+                                    referrals
+                                    ordered; however, that doesn't mean that they make it easy for patients and
+                                    physicians. We
+                                    encourage all patients to familiarize themselves with their coverage benefits as
+                                    insurance
+                                    companies routinely require "prior approval" or "prior authorizations" for
+                                    routine
+                                    diagnostic testing and services. We will do our best to find specialists to meet
+                                    your needs
+                                    that are covered by your health insurance company and will assist in the prior
+                                    authorization
+                                    processes they require. As an alternative, we have partnered with like-minded
+                                    companies to
+                                    offer affordable lab testing and medications. We are also building collaborative
+                                    relationships with multiple specialty physicians to ensure that you can receive
+                                    the care you
+                                    require, regardless of the changing insurance company rules.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 5 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    What is included in your membership?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <ul class="">
+                                        <li>Home visits</li>
+                                        <li>Telehealth/video visits</li>
+                                        <li>Urinalysis</li>
+                                        <li>Home pregnancy test</li>
+                                        <li>COVID test</li>
+                                        <li>Flu test</li>
+                                        <li>Annual physical/wellness visit</li>
+                                        <li>Care coordination for specialty services, hospitalization, and radiology
+                                        </li>
+                                        <li>Form completion related to a visit</li>
+                                        <li>Electronic health record (EHR) portal access</li>
+                                        <li>Service schedule: 7 days/week, 365 days/year, 6 AM to 8 PM</li>
+                                        <li>Negotiated cash prices with lab and radiology partners</li>
+                                        <li>Phone, text, email access during regular business hours</li>
+                                        <li>Price Transparency</li>
+                                        <li>Quarterly newsletter</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 6 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    What isn't included in your membership?
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Lab and radiology testing. Vaccines. Medications. Physician visits outside of
+                                    Together
+                                    Health providers. ER and urgent care visits. Hospitalizations
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 7 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    How much does it cost?
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Individual Plan Starting at <strong>$41</strong> / mo <br />
+                                    Individual + Family Plan Starting at <strong>$72</strong> / mo
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 8 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingNine">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                    Areas we are serving:
+                                </button>
+                            </h2>
+                            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Nashville, Antioch, Bellevue, Brentwood, Franklin, Gallatin, La Vergne, Madison,
+                                    Mount
+                                    Juliet, Murfreesboro, and Smyrna.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 9 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                    How do I become a member?
+                                </button>
+                            </h2>
+                            <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <a class="nav-link text-decoration-underline"
+                                        href="https://togetherhealth.hint.com/signup" target="_blank">Enroll
+                                        here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 10 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingeleven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseeleven" aria-expanded="false"
+                                    aria-controls="collapseeleven">
+                                    Does Together Health Accept Insurance
+                                </button>
+                            </h2>
+                            <div id="collapseeleven" class="accordion-collapse collapse" aria-labelledby="headingeleven"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We do not, instead we compliment insurance. When your membership, most of your
+                                    primary and urgent care needs are already included. If for any reason we have to
+                                    refer you to a specialist, this is the time you would need your insurance.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Section -->
+                <!-- <div class="col-md-6">
+                            <h1 class="text-center fw-bold mt-3 mb-5">Contact us!</h1>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="3"
+                                        placeholder="Type your message here" required></textarea>
+                                </div>
+                                <div class="d-flex justify-content-end mt-auto">
+                                    <button type="submit" class="btn gradient-button w-40">Send message</button>
+                                </div>
+                            </form>
+                        </div> -->
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="row mt-5">
+        <div class="col-auto d-none d-md-block">
+            <p class="text-start" style="font-size:12px;">info@togetherhealth.co</p>
+            <p class="text-start" style="font-size:12px;">Your <strong>healthcare</strong> on your <strong>time</strong>
+                </br> in your
+                <strong>home</strong>
+            </p>
+        </div>
+        <div class="col">
+            <div class="row justify-content-center mb-5">
+
+                <a class="col-auto" href="https://www.facebook.com/profile.php?id=61557324981829"><box-icon
+                        class="col-auto" name='facebook-circle' type='logo'></box-icon></a>
+                <a class="col-auto" href="https://www.linkedin.com/company/100893262"><box-icon class="col-auto"
+                        name='linkedin' type='logo'></box-icon></a>
+            </div>
+            <div class="col-auto d-block d-md-none">
+                <p class="text-center" style="font-size:12px;">Text / call: (615) 283-3186</p>
+                <p class="text-center" style="font-size:12px;">Fax: (615) 716-3666
                 </p>
             </div>
-            <div class="col-8">
-                <div class="row justify-content-center mb-5">
+            <p class="text-center" style="font-size:11px;">&copy; 2023 Together Health</p>
+        </div>
+        <div class="col-auto d-none d-md-block">
+            <p class="text-start" style="font-size:12px;">Text / call: (615) 283-3186</p>
+            <p class="text-start" style="font-size:12px;">Fax: (615) 716-3666
+            </p>
+        </div>
+        <!-- <div class="col-auto">
+            <ul class="">
+                <li></li>
+                <li class="">
+                    Fax: (615) 716-3666
+                </li>
+            </ul>
 
-                    <a class="col-auto" href="https://www.facebook.com/profile.php?id=61557324981829"><box-icon
-                            class="col-auto" name='facebook-circle' type='logo'></box-icon></a>
-                    <a class="col-auto" href="https://www.linkedin.com/company/100893262"><box-icon class="col-auto"
-                            name='linkedin' type='logo'></box-icon></a>
-                </div>
-                <p class="text-center">&copy; 2023 Together Health</p>
-            </div>
-            <div class="col-auto">
-                <p className="fw-bold"> Text or call: (615) 283-3186</p>
-                <p className="fw-bold"> Fax: (615) 716-3666</p>
-            </div>
-        </footer>
-    </div>
-    </div>
+
+        </div> -->
+    </footer>
+    <script>
+        AOS.init();
+        let lastScrollTop = 0;
+        const navBar = document.getElementById('navBar');
+
+        window.addEventListener('scroll', function () {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+
+                navBar.style.top = '-70px';
+            } else {
+
+                navBar.style.top = '0';
+            }
+
+            lastScrollTop = scrollTop;
+        });
+    </script>
 </body>
 
 
