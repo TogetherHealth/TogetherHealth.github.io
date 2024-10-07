@@ -7,6 +7,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const carouselCards = [
         {
+            id: 5,
+            title: 'Primary care',
+            subtitle: 'We are a group of primary care providers who share a passion for delivering a human-centered patient experience. We are skilled in caring for the full spectrum of wellness and illness for you and your family, starting from age 8 and up.',
+            icon: '<box-icon name=heart></box-icon>'
+        },
+        {
+            id: 4,
+            title: 'Urgent care',
+            subtitle: 'Did you wake up not feeling well? Twist an ankle? Need a COVID test? We do it all. It can take several hours to get to and be seen in an Urgent Care. Call us before packing up and heading out of your home to sit in a waiting room along with others who may not be feeling well.',
+            icon: '<box-icon name=home-heart></box-icon>'
+        },
+        {
             id: 1,
             title: 'Membership',
             subtitle: 'Our membership plan provides care where you are, with not having physical locations, we are able to transfer the cost savings to you as a patient.',
@@ -24,18 +36,8 @@ document.addEventListener('DOMContentLoaded', function () {
             subtitle: 'We are founded by a diverse team of clinical and operational experts focused on health equity, addressing the social determinants of health and easing access to high-quality primary care for all.',
             icon: '<box-icon name=body></box-icon>'
         },
-        {
-            id: 4,
-            title: 'Urgent care',
-            subtitle: 'Did you wake up not feeling well? Twist an ankle? Need a COVID test? We do it all. It can take several hours to get to and be seen in an Urgent Care. Call us before packing up and heading out of your home to sit in a waiting room along with others who may not be feeling well.',
-            icon: '<box-icon name=home-heart></box-icon>'
-        },
-        {
-            id: 5,
-            title: 'Primary care',
-            subtitle: 'We are a group of primary care providers who share a passion for delivering a human-centered patient experience. We are skilled in caring for the full spectrum of wellness and illness for you and your family, starting from age 8 and up.',
-            icon: '<box-icon name=heart></box-icon>'
-        }
+
+
     ];
 
     let minIdx = 0;
