@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             id: 5,
             title: 'Primary care',
-            subtitle: 'We are a group of primary care providers who share a passion for a human centric patient experience. We are skilled at caring for the full spectrum of wellness and illness for you and your family from starting the ages of 8 and up.',
+            subtitle: 'We are a group of primary care providers who share a passion for delivering a human-centered patient experience. We are skilled in caring for the full spectrum of wellness and illness for you and your family, starting from age 8 and up.',
             icon: '<box-icon name=heart></box-icon>'
         }
     ];
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let htmlString = '';
     carouselCards.map((item, index) => {
         let cardStringHtml = `
-            <div class="col-8 card-clickable ${index === 0 ? 'active' : ''} mb-3" data-aos="fade-up" data-index="${index}" style="cursor: pointer; height: 100px;">
+            <div class="col-9 card-clickable ${index === 0 ? 'active' : ''} mb-3" data-aos="fade-up" data-index="${index}" style="cursor: pointer;">
                 <div class="row align-items-center mb-3" style="border-radius:5px;">
                     <div class="col-auto text-center">
                         <div style="color:white; height 80px; width: 80px;">
