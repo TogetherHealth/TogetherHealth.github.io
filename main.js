@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             id: 5,
             title: 'Primary care',
-            subtitle: 'We are a group of primary care providers who share a passion for delivering a human-centered patient experience. We are skilled in caring for the full spectrum of wellness and illness for you and your family, starting from age 8 and up.',
+            subtitle: 'We are a group of primary care providers who share a passion for delivering a human-centered patient experience. We are skilled in caring for the full spectrum of health and wellness for you and your family, starting from age 6 and up.',
             icon: '<box-icon name=heart></box-icon>'
         },
         {
